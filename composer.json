@@ -1,0 +1,42 @@
+{
+    "name": "hrevert/ht-user-social-auth-module",
+    "description": " A Zend Framework 2 module which provides social authentication feature to ZfcUser ZF2 module",
+    "keywords": [
+        "oauth",
+        "authentication",
+        "zf2",
+        "zendframework2"
+    ],
+    "homepage": "https://github.com/hrevert/HtUserSocialAuthModule",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ujjwal Ojha",
+            "email": "bring2uo@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.0",
+        "zf-commons/zfc-user": "1.*",
+        "hrevert/ht-oauth-client-module": "dev-feature/zend-db-driver",
+        "hrevert/ht-league-oauth-client-module": "0.2.*"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "HtUserSocialAuthModule\\": "src"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HtUserSocialAuthModuleTest\\": "tests"
+        }
+    }
+}
